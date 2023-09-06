@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import CounterComposition from './components/counter/CounterComposition.vue';
+  import ClassBind from './components/bind/ClassBind.vue';
 </script>
 
 <template>
   <!-- html -->
-  <CounterComposition />
+  <ClassBind />
 </template>
 
 <style scoped>

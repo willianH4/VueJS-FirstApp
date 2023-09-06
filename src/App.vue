@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import CounterComposition from './components/counter/CounterComposition.vue';
+  import ExampleSelective from './components/directives/ExampleSelective.vue'
 </script>
 
 <template>
   <!-- html -->
-  <CounterComposition />
+  <ExampleSelective />
 </template>
 
 <style scoped>

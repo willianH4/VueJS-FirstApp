@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import CounterOption from './components/counter/CounterOption.vue';
+  import CounterComposition from './components/counter/CounterComposition.vue';
 </script>
 
 <template>
   <!-- html -->
-  <CounterOption />
+  <CounterComposition />
 </template>
 
 <style scoped>

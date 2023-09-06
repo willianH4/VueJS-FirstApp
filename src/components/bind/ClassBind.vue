@@ -4,19 +4,18 @@
 </template>
 
 <script lang="ts">
-    import { defineComponent } from 'vue';
+    import { defineComponent, ref } from 'vue';
     export default defineComponent({
         name: 'ClassBind',
-        data() {
+        setup() {
+            let c = ref('#fff')
+            const handleClick = () => {
+                c.value = '#ff0000'
+            }
             return {
-                c: '#fff'
+                c, handleClick
             }
-        },
-        methods: {
-            handleClick() {
-                this.c = '#ff0000'
-            }
-        },
+        }
     })
 </script>
 

@@ -3,13 +3,21 @@
     <button @click="handleClick">Cambiar color</button>
 </template>
 
-<script lang="ts" setup>
-    import { ref } from 'vue';
-    
-    let c = ref('#FFF');
-    const handleClick = () => {
-        c.value = '#ff0000'
-    }
+<script lang="ts">
+    import { defineComponent } from 'vue';
+    export default defineComponent({
+        name: 'ClassBind',
+        data() {
+            return {
+                c: '#fff'
+            }
+        },
+        methods: {
+            handleClick() {
+                this.c = '#ff0000'
+            }
+        },
+    })
 </script>
 
 <style scoped>

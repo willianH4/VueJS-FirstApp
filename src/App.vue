@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import ExampleFor from './components/directives/ExampleFor.vue'
+  import ClassBind from './components/bind/ClassBind.vue';
 </script>
 
 <template>
   <!-- html -->
-  <ExampleFor />
+  <ClassBind />
 </template>
 
 <style scoped>

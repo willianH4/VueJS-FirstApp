@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import ExampleSelective from './components/directives/ExampleSelective.vue'
+  import ExampleFor from './components/directives/ExampleFor.vue'
 </script>
 
 <template>
   <!-- html -->
-  <ExampleSelective />
+  <ExampleFor />
 </template>
 
 <style scoped>

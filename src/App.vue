@@ -1,12 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import PostContainer from './components/post/PostContainer.vue';
+  import CounterOption from './components/counter/CounterOption.vue';
 </script>
 
 <template>
   <!-- html -->
-  <h1>Listado de posts:</h1>
-  <PostContainer />
+  <CounterOption />
 </template>
 
 <style scoped>

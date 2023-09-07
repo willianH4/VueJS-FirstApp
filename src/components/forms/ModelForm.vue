@@ -5,10 +5,15 @@
     <h3>{{ inputText }}</h3>
 </template>
 
-<script lang="ts" setup>
-    import { type Ref, ref } from 'vue';
+<script lang="ts">
+    import { defineComponent, ref } from 'vue';
 
-    let inputText:Ref<string> = ref('');
+    export default defineComponent({
+        setup() {
+            let inputText = ref('')
+            return { inputText }
+        }
+    })
 </script>
 
 <style scoped>

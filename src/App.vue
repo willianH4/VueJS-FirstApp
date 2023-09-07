@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import ClassBind from './components/bind/ClassBind.vue';
+  import ModelForm from './components/forms/ModelForm.vue';
 </script>
 
 <template>
   <!-- html -->
-  <ClassBind />
+  <ModelForm />
 </template>
 
 <style scoped>

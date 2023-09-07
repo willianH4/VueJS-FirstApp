@@ -9,9 +9,8 @@
     import { defineComponent, ref } from 'vue';
 
     export default defineComponent({
-        setup() {
-            let inputText = ref('')
-            return { inputText }
+        data() {
+            return { inputText: '' }
         }
     })
 </script>

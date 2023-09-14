@@ -1,13 +1,12 @@
 <template>
     <div class="container">
-        <PostDetailVue v-for="post in info" :key="post.title" :title="post.title" :content="post.content"/>
+        <PostDetailVue v-for="post in info" :key="post.title" :title="post.title" :content="post.content" @sayHi="showAlert"/>
     </div>
 </template>
 
 <script lang="ts" setup>
 import PostDetailVue from './PostDetail.vue';
 import type { IPost } from '@/data/interfaces/Post';
-
 
     let info:Array<IPost> = [
         {
@@ -30,7 +29,11 @@ import type { IPost } from '@/data/interfaces/Post';
             title: 'Post 5',
             content: 'Texto del post 5'
         }
-    ]
+    ];
+
+    function showAlert(msg: string) {
+        alert(msg);
+    }
 </script>
 
 <style scoped>

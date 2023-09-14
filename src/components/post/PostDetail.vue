@@ -2,11 +2,13 @@
     <div class="post">
         <h3>{{ props.title }}</h3>
         <p>{{ props.content }}</p>
+        <input type="text" v-model="message">
+        <button @click="handleClick">Saluda</button>
     </div>
 </template>
 
 <script lang="ts">
-    import { defineComponent } from 'vue';
+    import { defineComponent, ref, type Ref } from 'vue';
 
     export default defineComponent({
         name: 'PostDetail',
@@ -21,8 +23,13 @@
                 default: 'Este post no tiene contenido'
             }
         },
-        setup(props) {
-            return { props }
+        emits: ['sayHi'], // emits para comunicacion vertical ascendente
+        setup(props, {emit}) {
+            const handleClick = () => {
+                emit('sayHi', message.value)
+            }
+            let message: Ref<string> = ref('');
+            return { props, message, handleClick }
         }
     })
 </script>

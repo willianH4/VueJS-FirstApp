@@ -1,13 +1,13 @@
 <script setup lang="ts">
   // logic or components
-  import CycleOption from './components/cycle/CycleOption.vue';
+import CycleComposition from './components/cycle/CycleComposition.vue';
 import ModelForm from './components/forms/ModelForm.vue';
 </script>
 
 <template>
   <!-- html -->
   <ModelForm />
-  <CycleOption />
+  <CycleComposition/>
 </template>
 
 <style scoped>

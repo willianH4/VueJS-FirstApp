@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <PostDetailVue v-for="(post, index) in info" :key="index" title="post.title" content="post.content"/>
+        <PostDetailVue v-for="post in info" :key="post.title" :title="post.title" :content="post.content"/>
     </div>
 </template>
 

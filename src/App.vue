@@ -1,13 +1,11 @@
 <script setup lang="ts">
   // logic or components
-import CycleComposition from './components/cycle/CycleComposition.vue';
-import ModelForm from './components/forms/ModelForm.vue';
+import PostList from '@/components/post/PostList.vue'
 </script>
 
 <template>
   <!-- html -->
-  <ModelForm />
-  <CycleComposition/>
+  <PostList />
 </template>
 
 <style scoped>

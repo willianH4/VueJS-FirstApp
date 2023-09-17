@@ -6,17 +6,12 @@
 </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, type Ref, computed } from 'vue';
+<script lang="ts" setup>
+import { ref, computed, type Ref } from 'vue';
 
-    export default defineComponent({
-        name: 'ComputedExample',
-        setup() {
-            let message:Ref<string> = ref('');
-            const reverse = computed(() => message.value.split('').reverse().join(''))
-            return { message, reverse }
-        }
-    })
+    let message: Ref<string> = ref('');
+    const reverse = computed(() => message.value.split('').reverse().join(''));
+
 </script>
 
 <style scoped>

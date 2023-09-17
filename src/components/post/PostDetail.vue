@@ -7,31 +7,21 @@
     </div>
 </template>
 
-<script lang="ts">
-    import { defineComponent, ref, type Ref } from 'vue';
+<script lang="ts" setup>
+    import { defineProps, defineEmits, ref, type Ref } from 'vue';
 
-    export default defineComponent({
-        name: 'PostDetail',
-        props: {
-            title: {
-                type: String,
-                required: true
-            },
-            content: {
-                type: String,
-                required: false,
-                default: 'Este post no tiene contenido'
-            }
-        },
-        emits: ['sayHi'], // emits para comunicacion vertical ascendente
-        setup(props, {emit}) {
-            const handleClick = () => {
-                emit('sayHi', message.value)
-            }
-            let message: Ref<string> = ref('');
-            return { props, message, handleClick }
-        }
-    })
+    const props = defineProps({
+        title: String, 
+        content: String
+    });
+
+    const emit = defineEmits(['sayHi']);
+
+    const handleClick = () => {
+        emit('sayHi', message.value)
+    }
+    let message: Ref<string> = ref('');
+
 </script>
 
 <style scoped>

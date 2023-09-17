@@ -7,19 +7,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref, type Ref, computed } from 'vue';
 
     export default defineComponent({
         name: 'ComputedExample',
-        data() {
-            return {
-                message: ''
-            }
-        },
-        computed: {
-            reverse(): string {
-                return this.message.split('').reverse().join('')
-            }
+        setup() {
+            let message:Ref<string> = ref('');
+            const reverse = computed(() => message.value.split('').reverse().join(''))
+            return { message, reverse }
         }
     })
 </script>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-  import ComputedExample from '@/components/computed/ComputedExample.vue'
+  import ExeciseComputed from '@/components/computed/ExeciseComputed.vue'
 </script>
 
 <template>
   <!-- html -->
-  <ComputedExample />
+  <ExeciseComputed />
 </template>
 
 <style scoped>

@@ -1,11 +1,11 @@
 <script setup lang="ts">
   // logic or components
-import PostList from '@/components/post/PostList.vue'
+  import ComputedExample from '@/components/computed/ComputedExample.vue'
 </script>
 
 <template>
   <!-- html -->
-  <PostList />
+  <ComputedExample />
 </template>
 
 <style scoped>
